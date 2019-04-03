@@ -1,6 +1,8 @@
 -- Copyright 2019 Xingwang Liao <kuoruan@gmail.com>
 -- Licensed to the public under the MIT License.
 
+local dsp = require "luci.dispatcher"
+
 local m, s, o
 
 m = Map("frpc", "%s - %s" % { translate("Frpc"), translate("Frps Servers") })
@@ -15,7 +17,7 @@ function s.create(...)
 	local sid = TypedSection.create(...)
 	if sid then
 		m.uci:save("frpc")
-		http.redirect(s.extedit % sid)
+		luci.http.redirect(s.extedit % sid)
 		return
 	end
 end
