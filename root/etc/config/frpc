@@ -1,0 +1,3 @@
+config common 'main'
+  option enabled '0'
+  option server ''
