@@ -46,26 +46,26 @@ o:value("http_proxy")
 o:value("socks5")
 o:value("static_file")
 
-o = s:option(value, "plugin_unix_path", translate("Plugin unix path"))
+o = s:option(Value, "plugin_unix_path", translate("Plugin unix path"))
 o:depends("plugin", "unix_domain_socket")
 
-o = s:option(value, "plugin_user", translate("Plugin user"))
+o = s:option(Value, "plugin_user", translate("Plugin user"))
 o:depends("plugin", "socks5")
 
-o = s:option(value, "plugin_passwd", translate("Plugin password"))
+o = s:option(Value, "plugin_passwd", translate("Plugin password"))
 o:depends("plugin", "socks5")
 
-o = s:option(value, "plugin_local_path", translate("Plugin local path"))
+o = s:option(Value, "plugin_local_path", translate("Plugin local path"))
 o:depends("plugin", "static_file")
 
-o = s:option(value, "plugin_strip_prefix", translate("Plugin strip prefix"))
+o = s:option(Value, "plugin_strip_prefix", translate("Plugin strip prefix"))
 o:depends("plugin", "static_file")
 
-o = s:option(value, "plugin_http_user", translate("Plugin http user"))
+o = s:option(Value, "plugin_http_user", translate("Plugin http user"))
 o:depends("plugin", "http_proxy")
 o:depends("plugin", "static_file")
 
-o = s:option(value, "plugin_http_passwd", translate("Plugin http password"))
+o = s:option(Value, "plugin_http_passwd", translate("Plugin http password"))
 o:depends("plugin", "http_proxy")
 o:depends("plugin", "static_file")
 
@@ -152,17 +152,24 @@ o:depends("health_check_type", "http")
 
 o = s:option(Value, "health_check_timeout_s", translate("Health check connection timeout"))
 o.datatype = "uinteger"
-o:depends("health_check_type")
 o.placeholder = "3"
+o:depends("health_check_type", "tcp")
+o:depends("health_check_type", "http")
 
 o = s:option(Value, "health_check_max_failed", translate("Health check max failed"))
 o.datatype = "uinteger"
-o:depends("health_check_type")
 o.placeholder = "3"
+o:depends("health_check_type", "tcp")
+o:depends("health_check_type", "http")
 
 o = s:option(Value, "health_check_interval_s", translate("Health check interval"))
 o.datatype = "uinteger"
-o:depends("health_check_type")
 o.placeholder = "10"
+o:depends("health_check_type", "tcp")
+o:depends("health_check_type", "http")
+
+o = s:option(DynamicList, "extra_options", translate("Extra options"),
+	translate("List of extra options"))
+o.placeholder = "option=value"
 
 return m

@@ -27,7 +27,7 @@ o.rmempty = false
 
 o = s:option(Value, "server_port", translate("Server port"))
 o.datatype = "port"
-o.placeholder = "7000"
+o.rmempty = false
 
 o = s:option(Value, "token", translate("Token"))
 o.password = true
@@ -37,3 +37,5 @@ o.enabled = "true"
 o.disabled = "false"
 o.defalut = o.enabled
 o.rmempty = false
+
+return m

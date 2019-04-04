@@ -1,9 +1,43 @@
 -- Copyright 2019 Xingwang Liao <kuoruan@gmail.com>
 -- Licensed to the public under the MIT License.
 
+local uci = require "luci.model.uci".cursor()
 local util = require "luci.util"
+local fs = require "nixio.fs"
+local sys = require "luci.sys"
 
 local m, s, o
+local server_table = { }
+
+uci:foreach("frpc", "servers", function(s)
+	if s.alias then
+		server_table[s[".name"]] = s.alias
+  elseif s.server_addr and s.server_port then
+    local ip = s.server_addr
+    if s.server_addr:find(":") then
+      ip = "[%s]" % s.server_addr
+    end
+		server_table[s[".name"]] = "%s:%s" % { ip, s.server_port }
+	end
+end)
+
+local function frpc_version()
+  local file = uci:get("frpc", "main", "client_file")
+
+  if not file or file == "" or not fs.stat(file) then
+    return "<em style=\"color: red;\">%s</em>" % translate("Invalid client file")
+  end
+
+  if not fs.access(file, "rwx", "rx", "rx") then
+    fs.chmod(file, 755)
+  end
+
+  local version = util.trim(sys.exec("%s -v 2>/dev/null" % file))
+  if version == "" then
+    return "<em style=\"color: red;\">%s</em>" % translate("Can't get client version")
+  end
+  return translatef("Version: %s", version)
+end
 
 m = Map("frpc", "%s - %s" % { translate("Frpc"), translate("Common Settings") },
 "<p>%s</p><p>%s</p>" % {
@@ -24,10 +58,16 @@ s:tab("manage", translate("Manage Options"))
 
 o = s:taboption("general", Flag, "enabled", translate("Enabled"))
 
+o = s:taboption("general", Value, "client_file", translate("Client file"), frpc_version())
+o.rmempty = false
+
 o = s:taboption("general", ListValue, "server", translate("Server"))
 o:value("", "None")
+for k, v in pairs(server_table) do
+	o:value(k, v)
+end
 
-o = s:taboption("general", ListValue, "run_user", tanslate("Run daemon as user"),
+o = s:taboption("general", ListValue, "run_user", translate("Run daemon as user"),
   translate("Leave blank to use default user"))
 o:value("")
 local user
@@ -70,7 +110,7 @@ o:value("kcp", "KCP")
 o:value("websocket", "Websocket")
 o.default = "tcp"
 
-o = s:taboption("advanced", Value, "http_proxy", tanslate("HTTP proxy"),
+o = s:taboption("advanced", Value, "http_proxy", translate("HTTP proxy"),
   translate("Connect frps by http proxy or socks5 proxy, format: [protocol]://[user]:[passwd]@[ip]:[port]"))
 
 o = s:taboption("advanced", Flag, "tls_enable", translate("TLS enable"),
@@ -99,6 +139,5 @@ o = s:taboption("manage", Value, "admin_user", translate("Admin user"))
 
 o = s:taboption("manage", Value, "admin_pwd", translate("Admin password"))
 o.password = true
-
 
 return m

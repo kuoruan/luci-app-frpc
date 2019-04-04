@@ -42,3 +42,5 @@ o.cfgvalue = function (...)
   local v = Value.cfgvalue(...)
 	return v == "true" and translate("True") or translate("False")
 end
+
+return m
