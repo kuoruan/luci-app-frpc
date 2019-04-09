@@ -22,8 +22,8 @@ function index()
 		_("Rules"), 2).leaf = true
 
 	entry({"admin", "services", "frpc", "servers"},
-	 arcombine(cbi("frpc/servers"), cbi("frpc/server-detail")),
-	 _("Servers"), 3).leaf = true
+		arcombine(cbi("frpc/servers"), cbi("frpc/server-detail")),
+		_("Servers"), 3).leaf = true
 
 	entry({"admin", "services", "frpc", "status"}, call("action_status"))
 end
