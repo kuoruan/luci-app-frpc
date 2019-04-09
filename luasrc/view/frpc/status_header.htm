@@ -8,22 +8,22 @@ local dsp = require "luci.dispatcher"
 -%>
 
 <fieldset class="cbi-section">
-  <p id="frpc_status">
-    <em><%:Collecting data...%></em>
-  </p>
+	<p id="frpc_status">
+		<em><%:Collecting data...%></em>
+	</p>
 </fieldset>
 
 <script type="text/javascript">//<![CDATA[
-  XHR.poll(5, '<%=dsp.build_url("admin/services/frpc/status")%>', null,
-    function (x, data) {
-      if (x.status !== 200 || !data) {
-        return;
-      }
+	XHR.poll(5, '<%=dsp.build_url("admin/services/frpc/status")%>', null,
+		function (x, data) {
+			if (x.status !== 200 || !data) {
+				return;
+			}
 
-      var frpcStatusElm = document.getElementById('frpc_status');
-      frpcStatusElm.innerHTML = data.running
-        ? '<%:Running%>'
-        : '<%:Not Running%>';
-    }
-  )
+			var frpcStatusElm = document.getElementById('frpc_status');
+			frpcStatusElm.innerHTML = data.running
+				? '<%:Running%>'
+				: '<%:Not Running%>';
+		}
+	);
 //]]></script>

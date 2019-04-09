@@ -31,7 +31,7 @@ end
 
 o = s:option(DummyValue, "type", translate("Type"))
 o.cfgvalue = function (...)
-  local v = Value.cfgvalue(...)
+	local v = Value.cfgvalue(...)
 	return v and v:upper() or "?"
 end
 

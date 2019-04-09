@@ -39,7 +39,7 @@ end
 
 o = s:option(DummyValue, "tcp_mux", translate("TCP Mux"))
 o.cfgvalue = function (...)
-  local v = Value.cfgvalue(...)
+	local v = Value.cfgvalue(...)
 	return v == "true" and translate("True") or translate("False")
 end
 
