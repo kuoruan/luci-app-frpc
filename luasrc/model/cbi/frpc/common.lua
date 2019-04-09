@@ -62,7 +62,7 @@ o = s:taboption("general", Value, "client_file", translate("Client file"), frpc_
 o.rmempty = false
 
 o = s:taboption("general", ListValue, "server", translate("Server"))
-o:value("", "None")
+o:value("", translate("None"))
 for k, v in pairs(server_table) do
 	o:value(k, v)
 end

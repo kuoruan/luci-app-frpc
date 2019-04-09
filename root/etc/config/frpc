@@ -1,3 +1,15 @@
 config frpc 'main'
 	option enabled '0'
-	option server ''
+	option server 'frps'
+	option client_file '/usr/bin/frpc'
+
+config server 'frps'
+	option server_addr '0.0.0.0'
+	option server_port '7000'
+
+config rule 'ssh_proxy'
+	option name 'ssh'
+	option type 'tcp'
+	option local_ip '127.0.0.1'
+	option local_port '22'
+	option remote_port '6000'

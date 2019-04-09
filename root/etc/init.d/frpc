@@ -11,7 +11,7 @@ NAME="frpc"
 CONFIG_FOLDER="/var/etc/$NAME"
 
 _log() {
-  local level="$1"
+  local level="$1" ; shift
   local msg="$@"
   logger -p "daemon.$level" -t "$NAME" "$msg"
 
@@ -63,7 +63,7 @@ frpc_scetion_validate() {
     'log_max_days:uinteger:3' \
     'pool_count:uinteger:0' \
     'user:string' \
-    'protocol:or("tcp", "kcp", "websocket")' \
+    'protocol:or("tcp", "kcp", "websocket"):tcp' \
     'http_proxy:string' \
     'tls_enable:or("true", "false")' \
     'dns_server:host' \

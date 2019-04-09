@@ -3,6 +3,7 @@
 
 local http = require "luci.http"
 local uci = require "luci.model.uci".cursor()
+local sys = require "luci.sys"
 
 module("luci.controller.frpc", package.seeall)
 
