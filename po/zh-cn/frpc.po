@@ -1,124 +1,126 @@
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:132
 msgid "Admin addr"
-msgstr ""
+msgstr "管理地址"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:140
 msgid "Admin password"
-msgstr ""
+msgstr "管理密码"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:135
 msgid "Admin port"
-msgstr ""
+msgstr "管理端口"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:138
 msgid "Admin user"
-msgstr ""
+msgstr "管理用户"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:56
 msgid "Advanced Options"
-msgstr ""
+msgstr "高级选项"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/server-detail.lua:22
 #: luci-app-frpc/luasrc/model/cbi/frpc/servers.lua:25
 msgid "Alias"
-msgstr ""
+msgstr "别名"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:108
 msgid "Bind addr"
-msgstr ""
+msgstr "绑定地址"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:113
 msgid "Bind port"
-msgstr ""
+msgstr "绑定端口"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:37
 msgid "Can't get client version"
-msgstr ""
+msgstr "无法获取客户端版本"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:61
 msgid "Client file"
-msgstr ""
+msgstr "客户端文件"
 
 #: luci-app-frpc/luasrc/view/frpc/status_header.htm:12
 msgid "Collecting data..."
-msgstr ""
+msgstr "正在收集数据..."
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:42
 msgid "Common Settings"
-msgstr ""
+msgstr "通用设置"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:107
 msgid "Communication protocol used to connect to server, default is tcp"
-msgstr ""
+msgstr "和服务端通信所使用的协议，默认：tcp"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:114
 msgid ""
 "Connect frps by http proxy or socks5 proxy, format: [protocol]://[user]:"
 "[passwd]@[ip]:[port]"
 msgstr ""
+"通过 http 或 socks5 代理连接 frps，格式：[protocol]://[user]:[passwd]@[ip]:"
+"[port]"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:98
 msgid "Connections will be established in advance, default value is zero"
-msgstr ""
+msgstr "提前建立多少个连接，默认值：0"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:128
 msgid "Custom domains"
-msgstr ""
+msgstr "自定义域名"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:121
 msgid "DNS server"
-msgstr ""
+msgstr "DNS 服务器"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:87
 msgid "Debug"
-msgstr ""
+msgstr "调试"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:22
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:144
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:25
 msgid "Disabled"
-msgstr ""
+msgstr "已禁用"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/server-detail.lua:10
 msgid "Edit Frps Server"
-msgstr ""
+msgstr "编辑 Frps 服务器"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:10
 msgid "Edit Proxy Rule"
-msgstr ""
+msgstr "编辑代理规则"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:78
 msgid "Enable logging"
-msgstr ""
+msgstr "启用日志"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:59
 msgid "Enabled"
-msgstr ""
+msgstr "已启用"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:90
 msgid "Error"
-msgstr ""
+msgstr "错误"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:171
 msgid "Extra options"
-msgstr ""
+msgstr "额外选项"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/servers.lua:43
 msgid "False"
-msgstr ""
+msgstr "否"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:45
 msgid "For more information, please visit: %s"
-msgstr ""
+msgstr "获取更多信息，请访问：%s"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:44
 msgid ""
 "Frp is a fast reverse proxy to help you expose a local server behind a NAT "
 "or firewall to the internet."
-msgstr ""
+msgstr "Frp 是一个可用于内网穿透的高性能的反向代理应用。"
 
 #: luci-app-frpc/luasrc/controller/frpc.lua:15
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:42
@@ -131,287 +133,287 @@ msgstr ""
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/servers.lua:8
 msgid "Frps Servers"
-msgstr ""
+msgstr "Frps 服务器"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:55
 msgid "General Options"
-msgstr ""
+msgstr "常规选项"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:139
 msgid "Group"
-msgstr ""
+msgstr "组"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:141
 msgid "Group key"
-msgstr ""
+msgstr "组密钥"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:121
 msgid "HTTP password"
-msgstr ""
+msgstr "HTTP 密码"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:113
 msgid "HTTP proxy"
-msgstr ""
+msgstr "HTTP 代理"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:118
 msgid "HTTP user"
-msgstr ""
+msgstr "HTTP 用户"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:153
 msgid "Health check connection timeout"
-msgstr ""
+msgstr "可用性检查连接超时"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:165
 msgid "Health check interval"
-msgstr ""
+msgstr "可用性检查间隔"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:159
 msgid "Health check max failed"
-msgstr ""
+msgstr "可用性检查最大失败次数"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:143
 msgid "Health check type"
-msgstr ""
+msgstr "可用性检查类型"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:150
 msgid "Health check url"
-msgstr ""
+msgstr "可用性检查连接"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:124
 msgid "Heartbeat interval"
-msgstr ""
+msgstr "心跳间隔"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:128
 msgid "Heartbeat timeout"
-msgstr ""
+msgstr "心跳超时"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:135
 msgid "Host header rewrite"
-msgstr ""
+msgstr "主机头重写"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:117
 msgid "If true, Frpc will connect Frps by TLS"
-msgstr ""
+msgstr "设置为 true 时，Frpc 会通过 TLS 连接 Frps"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:88
 msgid "Info"
-msgstr ""
+msgstr "信息"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:28
 msgid "Invalid client file"
-msgstr ""
+msgstr "客户端文件无效"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:71
 msgid "Leave blank to use default user"
-msgstr ""
+msgstr "留空以使用默认用户"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:172
 msgid "List of extra options"
-msgstr ""
+msgstr "额外选项列表"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:72
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:38
 msgid "Local IP"
-msgstr ""
+msgstr "本地 IP"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:43
 msgid "Local Port"
-msgstr ""
+msgstr "本地端口"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:76
 msgid "Local port"
-msgstr ""
+msgstr "本地端口"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:132
 msgid "Locations"
-msgstr ""
+msgstr "地址"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:80
 msgid "Log file"
-msgstr ""
+msgstr "日志文件"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:84
 msgid "Log level"
-msgstr ""
+msgstr "日志等级"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:92
 msgid "Log max days"
-msgstr ""
+msgstr "日志保存时间"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:57
 msgid "Manage Options"
-msgstr ""
+msgstr "管理选项"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:27
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:43
 #: luci-app-frpc/luasrc/model/cbi/frpc/servers.lua:27
 msgid "None"
-msgstr ""
+msgstr "无"
 
 #: luci-app-frpc/luasrc/view/frpc/status_header.htm:26
 msgid "Not Running"
-msgstr ""
+msgstr "服务未运行"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:42
 msgid "Plugin"
-msgstr ""
+msgstr "插件"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:68
 msgid "Plugin http password"
-msgstr ""
+msgstr "插件 http 密码"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:64
 msgid "Plugin http user"
-msgstr ""
+msgstr "插件 http 用户"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:58
 msgid "Plugin local path"
-msgstr ""
+msgstr "插件本地路径"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:55
 msgid "Plugin password"
-msgstr ""
+msgstr "插件密码"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:61
 msgid "Plugin strip prefix"
-msgstr ""
+msgstr "插件去除前缀"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:49
 msgid "Plugin unix path"
-msgstr ""
+msgstr "插件 Unix 地址"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:52
 msgid "Plugin user"
-msgstr ""
+msgstr "插件用户"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:97
 msgid "Pool count"
-msgstr ""
+msgstr "连接池数目"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:106
 msgid "Protocol"
-msgstr ""
+msgstr "协议"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:24
 msgid "Proxy Name"
-msgstr ""
+msgstr "代理名称"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:8
 msgid "Proxy Rules"
-msgstr ""
+msgstr "代理规则"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:103
 msgid "Proxy user"
-msgstr ""
+msgstr "代理用户"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:80
 msgid "Remote port"
-msgstr ""
+msgstr "服务端端口"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:95
 msgid "Role"
-msgstr ""
+msgstr "角色"
 
 #: luci-app-frpc/luasrc/controller/frpc.lua:22
 msgid "Rules"
-msgstr ""
+msgstr "规则"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:70
 msgid "Run daemon as user"
-msgstr ""
+msgstr "以用户身份运行"
 
 #: luci-app-frpc/luasrc/view/frpc/status_header.htm:25
 msgid "Running"
-msgstr ""
+msgstr "服务正在运行"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:103
 msgid "SK"
-msgstr ""
+msgstr "SK"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:64
 msgid "Server"
-msgstr ""
+msgstr "服务端"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/servers.lua:30
 msgid "Server Addr"
-msgstr ""
+msgstr "服务端地址"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/servers.lua:35
 msgid "Server Port"
-msgstr ""
+msgstr "服务端端口"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/server-detail.lua:24
 msgid "Server addr"
-msgstr ""
+msgstr "服务端地址"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:99
 msgid "Server name"
-msgstr ""
+msgstr "服务端名称"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/server-detail.lua:28
 msgid "Server port"
-msgstr ""
+msgstr "服务端端口"
 
 #: luci-app-frpc/luasrc/controller/frpc.lua:26
 msgid "Servers"
-msgstr ""
+msgstr "服务端"
 
 #: luci-app-frpc/luasrc/controller/frpc.lua:18
 msgid "Settings"
-msgstr ""
+msgstr "设置"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:124
 msgid "Subdomain"
-msgstr ""
+msgstr "子域名"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/servers.lua:40
 msgid "TCP Mux"
-msgstr ""
+msgstr "TCP Mux"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/server-detail.lua:35
 msgid "TCP mux"
-msgstr ""
+msgstr "TCP mux"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:116
 msgid "TLS enable"
-msgstr ""
+msgstr "启用 TLS"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/server-detail.lua:32
 msgid "Token"
-msgstr ""
+msgstr "令牌"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:86
 msgid "Trace"
-msgstr ""
+msgstr "追踪"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/servers.lua:43
 msgid "True"
-msgstr ""
+msgstr "是"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:34
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:32
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:90
 msgid "Use compression"
-msgstr ""
+msgstr "使用压缩"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:85
 msgid "Use encryption"
-msgstr ""
+msgstr "使用加密"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:39
 msgid "Version: %s"
-msgstr ""
+msgstr "版本：%s"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:89
 msgid "Warn"
-msgstr ""
+msgstr "警告"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:104
 msgid "Your proxy name will be changed to {user}.{proxy}"
-msgstr ""
+msgstr "设置后代理名称将变为 {user}.{proxy}"
