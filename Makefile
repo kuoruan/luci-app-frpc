@@ -31,3 +31,5 @@ if [ -z "$${IPKG_INSTROOT}" ]; then
 fi
 exit 0
 endef
+
+# call BuildPackage - OpenWrt buildroot signature
