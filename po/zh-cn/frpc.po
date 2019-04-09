@@ -122,7 +122,7 @@ msgid ""
 "or firewall to the internet."
 msgstr "Frp 是一个可用于内网穿透的高性能的反向代理应用。"
 
-#: luci-app-frpc/luasrc/controller/frpc.lua:15
+#: luci-app-frpc/luasrc/controller/frpc.lua:16
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:42
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:10
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:8
@@ -248,6 +248,7 @@ msgstr "管理选项"
 msgid "Name"
 msgstr "名称"
 
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:65
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:43
 #: luci-app-frpc/luasrc/model/cbi/frpc/servers.lua:27
 msgid "None"
@@ -317,7 +318,7 @@ msgstr "服务端端口"
 msgid "Role"
 msgstr "角色"
 
-#: luci-app-frpc/luasrc/controller/frpc.lua:22
+#: luci-app-frpc/luasrc/controller/frpc.lua:23
 msgid "Rules"
 msgstr "规则"
 
@@ -357,11 +358,11 @@ msgstr "服务端名称"
 msgid "Server port"
 msgstr "服务端端口"
 
-#: luci-app-frpc/luasrc/controller/frpc.lua:26
+#: luci-app-frpc/luasrc/controller/frpc.lua:27
 msgid "Servers"
 msgstr "服务端"
 
-#: luci-app-frpc/luasrc/controller/frpc.lua:18
+#: luci-app-frpc/luasrc/controller/frpc.lua:19
 msgid "Settings"
 msgstr "设置"
 

@@ -120,7 +120,7 @@ msgid ""
 "or firewall to the internet."
 msgstr ""
 
-#: luci-app-frpc/luasrc/controller/frpc.lua:15
+#: luci-app-frpc/luasrc/controller/frpc.lua:16
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:42
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:10
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:8
@@ -246,6 +246,7 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:65
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:43
 #: luci-app-frpc/luasrc/model/cbi/frpc/servers.lua:27
 msgid "None"
@@ -315,7 +316,7 @@ msgstr ""
 msgid "Role"
 msgstr ""
 
-#: luci-app-frpc/luasrc/controller/frpc.lua:22
+#: luci-app-frpc/luasrc/controller/frpc.lua:23
 msgid "Rules"
 msgstr ""
 
@@ -355,11 +356,11 @@ msgstr ""
 msgid "Server port"
 msgstr ""
 
-#: luci-app-frpc/luasrc/controller/frpc.lua:26
+#: luci-app-frpc/luasrc/controller/frpc.lua:27
 msgid "Servers"
 msgstr ""
 
-#: luci-app-frpc/luasrc/controller/frpc.lua:18
+#: luci-app-frpc/luasrc/controller/frpc.lua:19
 msgid "Settings"
 msgstr ""
 
