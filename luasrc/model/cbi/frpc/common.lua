@@ -9,7 +9,7 @@ local sys = require "luci.sys"
 local m, s, o
 local server_table = { }
 
-uci:foreach("frpc", "servers", function(s)
+uci:foreach("frpc", "server", function(s)
 	if s.alias then
 		server_table[s[".name"]] = s.alias
   elseif s.server_addr and s.server_port then
@@ -48,7 +48,7 @@ m = Map("frpc", "%s - %s" % { translate("Frpc"), translate("Common Settings") },
 
 m:append(Template("frpc/status_header"))
 
-s = m:section(NamedSection, "main", "common")
+s = m:section(NamedSection, "main", "frpc")
 s.addremove = false
 s.anonymous = true
 

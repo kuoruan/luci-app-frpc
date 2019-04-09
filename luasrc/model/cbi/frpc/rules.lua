@@ -7,7 +7,7 @@ local m, s, o
 
 m = Map("frpc", "%s - %s" % { translate("Frpc"), translate("Proxy Rules") })
 
-s = m:section(TypedSection, "rules")
+s = m:section(TypedSection, "rule")
 s.anonymous = true
 s.addremove = true
 s.sortable = true

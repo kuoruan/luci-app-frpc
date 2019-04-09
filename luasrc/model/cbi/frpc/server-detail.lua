@@ -10,12 +10,12 @@ local sid = arg[1]
 m = Map("frpc", "%s - %s" % { translate("Frpc"), translate("Edit Frps Server") })
 m.redirect = dsp.build_url("admin/services/frpc/servers")
 
-if m.uci:get("frpc", sid) ~= "servers" then
+if m.uci:get("frpc", sid) ~= "server" then
 	luci.http.redirect(m.redirect)
 	return
 end
 
-s = m:section(NamedSection, sid, "servers")
+s = m:section(NamedSection, sid, "server")
 s.anonymous = true
 s.addremove = false
 

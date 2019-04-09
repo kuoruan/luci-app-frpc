@@ -7,7 +7,7 @@ local m, s, o
 
 m = Map("frpc", "%s - %s" % { translate("Frpc"), translate("Frps Servers") })
 
-s = m:section(TypedSection, "servers")
+s = m:section(TypedSection, "server")
 s.anonymous = true
 s.addremove = true
 s.sortable = true

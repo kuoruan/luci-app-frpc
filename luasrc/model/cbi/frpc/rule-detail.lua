@@ -10,12 +10,12 @@ local sid = arg[1]
 m = Map("frpc", "%s - %s" % { translate("Frpc"), translate("Edit Proxy Rule") })
 m.redirect = dsp.build_url("admin/services/frpc/rules")
 
-if m.uci:get("frpc", sid) ~= "rules" then
+if m.uci:get("frpc", sid) ~= "rule" then
 	luci.http.redirect(m.redirect)
 	return
 end
 
-s = m:section(NamedSection, sid, "rules")
+s = m:section(NamedSection, sid, "rule")
 s.anonymous = true
 s.addremove = false
 
