@@ -78,7 +78,7 @@ o.datatype = "portrange"
 o:depends("plugin", "")
 
 o = s:option(Value, "remote_port", translate("Remote port"))
-o.datatype = "or('0', portrange)"
+o.datatype = "or(port, portrange)"
 o:depends("type", "tcp")
 o:depends("type", "udp")
 

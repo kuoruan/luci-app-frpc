@@ -1,19 +1,19 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:132
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:139
 msgid "Admin addr"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:140
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:147
 msgid "Admin password"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:135
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:142
 msgid "Admin port"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:138
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:145
 msgid "Admin user"
 msgstr ""
 
@@ -50,17 +50,17 @@ msgstr ""
 msgid "Common Settings"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:107
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:114
 msgid "Communication protocol used to connect to server, default is tcp"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:114
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:121
 msgid ""
 "Connect frps by http proxy or socks5 proxy, format: [protocol]://[user]:"
 "[passwd]@[ip]:[port]"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:98
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:99
 msgid "Connections will be established in advance, default value is zero"
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Custom domains"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:121
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:128
 msgid "DNS server"
 msgstr ""
 
@@ -149,7 +149,7 @@ msgstr ""
 msgid "HTTP password"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:113
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:120
 msgid "HTTP proxy"
 msgstr ""
 
@@ -177,11 +177,11 @@ msgstr ""
 msgid "Health check url"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:124
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:131
 msgid "Heartbeat interval"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:128
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:135
 msgid "Heartbeat timeout"
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Host header rewrite"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:117
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:124
 msgid "If true, Frpc will connect Frps by TLS"
 msgstr ""
 
@@ -234,8 +234,12 @@ msgstr ""
 msgid "Log level"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:92
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:93
 msgid "Log max days"
+msgstr ""
+
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:107
+msgid "Login fail exit"
 msgstr ""
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:57
@@ -254,6 +258,10 @@ msgstr ""
 
 #: luci-app-frpc/luasrc/view/frpc/status_header.htm:26
 msgid "Not Running"
+msgstr ""
+
+#: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:50
+msgid "Not set"
 msgstr ""
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:42
@@ -288,11 +296,11 @@ msgstr ""
 msgid "Plugin user"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:97
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:98
 msgid "Pool count"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:106
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:113
 msgid "Protocol"
 msgstr ""
 
@@ -304,8 +312,12 @@ msgstr ""
 msgid "Proxy Rules"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:103
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:104
 msgid "Proxy user"
+msgstr ""
+
+#: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:48
+msgid "Remote Port"
 msgstr ""
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:80
@@ -376,7 +388,7 @@ msgstr ""
 msgid "TCP mux"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:116
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:123
 msgid "TLS enable"
 msgstr ""
 
@@ -413,6 +425,6 @@ msgstr ""
 msgid "Warn"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:104
+#: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:105
 msgid "Your proxy name will be changed to {user}.{proxy}"
 msgstr ""

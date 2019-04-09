@@ -63,6 +63,7 @@ frpc_scetion_validate() {
     'log_max_days:uinteger:3' \
     'pool_count:uinteger:0' \
     'user:string' \
+    'login_fail_exit:or("true", "false"):true' \
     'protocol:or("tcp", "kcp", "websocket"):tcp' \
     'http_proxy:string' \
     'tls_enable:or("true", "false")' \
@@ -81,7 +82,7 @@ server_section_validate() {
     'server_addr:host' \
     'server_port:port' \
     'token:string' \
-    'tcp_mux:or("true", "false")'
+    'tcp_mux:or("true", "false"):true'
 }
 
 rule_section_validate() {
@@ -99,9 +100,9 @@ rule_section_validate() {
     'plugin_http_passwd:string' \
     'local_ip:host' \
     'local_port:port' \
-    'remote_port:portrange' \
-    'use_encryption:or("true", "false")' \
-    'use_compression:or("true", "false")' \
+    'remote_port:or(port, portrange)' \
+    'use_encryption:or("true", "false"):false' \
+    'use_compression:or("true", "false"):false' \
     'role:string' \
     'server_name:string' \
     'sk:string' \

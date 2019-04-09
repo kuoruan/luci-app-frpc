@@ -88,6 +88,7 @@ o:value("debug", translate("Debug"))
 o:value("info", translate("Info"))
 o:value("warn", translate("Warn"))
 o:value("error", translate("Error"))
+o.default = "warn"
 
 o = s:taboption("general", Value, "log_max_days", translate("Log max days"))
 o:depends("enable_logging", "1")
@@ -102,6 +103,12 @@ o.placeholder = '0'
 
 o = s:taboption("advanced", Value, "user", translate("Proxy user"),
   translate("Your proxy name will be changed to {user}.{proxy}"))
+
+o = s:taboption("advanced", Flag, "login_fail_exit", translate("Login fail exit"))
+o.enabled = "true"
+o.disabled = "false"
+o.defalut = o.enabled
+o.rmempty = false
 
 o = s:taboption("advanced", ListValue, "protocol", translate("Protocol"),
   translate("Communication protocol used to connect to server, default is tcp"))

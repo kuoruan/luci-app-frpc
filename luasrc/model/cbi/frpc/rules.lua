@@ -45,4 +45,9 @@ o.cfgvalue = function (...)
 	return Value.cfgvalue(...) or "?"
 end
 
+o = s:option(DummyValue, "remote_port", translate("Remote Port"))
+o.cfgvalue = function (...)
+	return Value.cfgvalue(...) or translate("Not set")
+end
+
 return m
