@@ -47,42 +47,42 @@ o:value("socks5")
 o:value("static_file")
 o:value("https2http")
 
-o = s:option(Value, "plugin_unix_path", "% - %" % { translate("Plugin"), translate("Unix path") })
+o = s:option(Value, "plugin_unix_path", "%s - %s" % { translate("Plugin"), translate("Unix path") })
 o.datatype = "file"
 o:depends("plugin", "unix_domain_socket")
 
-o = s:option(Value, "plugin_user", "% - %" % { translate("Plugin"), translate("User") })
+o = s:option(Value, "plugin_user", "%s - %s" % { translate("Plugin"), translate("User") })
 o:depends("plugin", "socks5")
 
-o = s:option(Value, "plugin_passwd", "% - %" % { translate("Plugin"), translate("Password") })
+o = s:option(Value, "plugin_passwd", "%s - %s" % { translate("Plugin"), translate("Password") })
 o:depends("plugin", "socks5")
 
-o = s:option(Value, "plugin_local_path", "% - %" % { translate("Plugin"), translate("Local path") })
+o = s:option(Value, "plugin_local_path", "%s - %s" % { translate("Plugin"), translate("Local path") })
 o:depends("plugin", "static_file")
 
-o = s:option(Value, "plugin_strip_prefix", "% - %" % { translate("Plugin"), translate("Strip prefix") })
+o = s:option(Value, "plugin_strip_prefix", "%s - %s" % { translate("Plugin"), translate("Strip prefix") })
 o:depends("plugin", "static_file")
 
-o = s:option(Value, "plugin_http_user", "% - %" % { translate("Plugin"), translate("HTTP user") })
+o = s:option(Value, "plugin_http_user", "%s - %s" % { translate("Plugin"), translate("HTTP user") })
 o:depends("plugin", "http_proxy")
 o:depends("plugin", "static_file")
 
-o = s:option(Value, "plugin_http_passwd", "% - %" % { translate("Plugin"), translate("HTTP password") })
+o = s:option(Value, "plugin_http_passwd", "%s - %s" % { translate("Plugin"), translate("HTTP password") })
 o:depends("plugin", "http_proxy")
 o:depends("plugin", "static_file")
 
-o = s:option(Value, "plugin_local_addr", "% - %" % { translate("Plugin"), translate("Local addr") })
+o = s:option(Value, "plugin_local_addr", "%s - %s" % { translate("Plugin"), translate("Local addr") })
 o:depends("plugin", "https2http")
 
-o = s:option(Value, "plugin_crt_path", "% - %" % { translate("Plugin"), translate("Certificate path") })
+o = s:option(Value, "plugin_crt_path", "%s - %s" % { translate("Plugin"), translate("Certificate path") })
 o.datatype = "file"
 o:depends("plugin", "https2http")
 
-o = s:option(Value, "plugin_key_path", "% - %" % { translate("Plugin"), translate("Key path") })
+o = s:option(Value, "plugin_key_path", "%s - %s" % { translate("Plugin"), translate("Key path") })
 o.datatype = "file"
 o:depends("plugin", "https2http")
 
-o = s:option(Value, "plugin_host_header_rewrite", "% - %" % { translate("Plugin"), translate("Host header rewrite") })
+o = s:option(Value, "plugin_host_header_rewrite", "%s - %s" % { translate("Plugin"), translate("Host header rewrite") })
 o:depends("plugin", "https2http")
 
 o = s:option(Value, "local_ip", translate("Local IP"))
@@ -166,29 +166,29 @@ o = s:option(Value, "group", translate("Group"))
 
 o = s:option(Value, "group_key", translate("Group key"))
 
-o = s:option(ListValue, "health_check_type", translate("Health check type"))
+o = s:option(ListValue, "health_check_type", "%s - %s" % { translate("Health check"), translate("Type") })
 o:value("", translate("Disabled"))
 o:value("tcp", "TCP")
 o:value("http", "HTTP")
 o:depends("type", "tcp")
 o:depends("type", "http")
 
-o = s:option(ListValue, "health_check_url", translate("Health check url"))
+o = s:option(ListValue, "health_check_url", "%s - %s" % { translate("Health check"), translate("URL") })
 o:depends("health_check_type", "http")
 
-o = s:option(Value, "health_check_timeout_s", translate("Health check connection timeout"))
+o = s:option(Value, "health_check_timeout_s", "%s - %s" % { translate("Health check"), translate("Connection timeout") })
 o.datatype = "uinteger"
 o.placeholder = "3"
 o:depends("health_check_type", "tcp")
 o:depends("health_check_type", "http")
 
-o = s:option(Value, "health_check_max_failed", translate("Health check max failed"))
+o = s:option(Value, "health_check_max_failed", "%s - %s" % { translate("Health check"), translate("Max failed") })
 o.datatype = "uinteger"
 o.placeholder = "3"
 o:depends("health_check_type", "tcp")
 o:depends("health_check_type", "http")
 
-o = s:option(Value, "health_check_interval_s", translate("Health check interval"))
+o = s:option(Value, "health_check_interval_s", "%s - %s" % { translate("Health check"), translate("Interval") })
 o.datatype = "uinteger"
 o.placeholder = "10"
 o:depends("health_check_type", "tcp")

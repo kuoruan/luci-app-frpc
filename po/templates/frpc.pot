@@ -30,11 +30,11 @@ msgstr ""
 msgid "Alias"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:121
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:124
 msgid "Bind addr"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:126
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:129
 msgid "Bind port"
 msgstr ""
 
@@ -42,7 +42,7 @@ msgstr ""
 msgid "Can't get client version"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:76
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:77
 msgid "Certificate path"
 msgstr ""
 
@@ -68,11 +68,15 @@ msgid ""
 "[passwd]@[ip]:[port]"
 msgstr ""
 
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:179
+msgid "Connection timeout"
+msgstr ""
+
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:98
 msgid "Connections will be established in advance, default value is zero"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:141
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:144
 msgid "Custom domains"
 msgstr ""
 
@@ -85,7 +89,7 @@ msgid "Debug"
 msgstr ""
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:22
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:167
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:170
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:25
 msgid "Disabled"
 msgstr ""
@@ -110,7 +114,7 @@ msgstr ""
 msgid "Error"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:194
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:197
 msgid "Extra options"
 msgstr ""
 
@@ -145,16 +149,16 @@ msgstr ""
 msgid "General Options"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:162
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:165
 msgid "Group"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:164
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:167
 msgid "Group key"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:69
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:134
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:70
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:137
 msgid "HTTP password"
 msgstr ""
 
@@ -162,29 +166,17 @@ msgstr ""
 msgid "HTTP proxy"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:65
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:131
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:66
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:134
 msgid "HTTP user"
 msgstr ""
 
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:169
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:176
-msgid "Health check connection timeout"
-msgstr ""
-
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:188
-msgid "Health check interval"
-msgstr ""
-
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:182
-msgid "Health check max failed"
-msgstr ""
-
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:166
-msgid "Health check type"
-msgstr ""
-
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:173
-msgid "Health check url"
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:179
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:185
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:191
+msgid "Health check"
 msgstr ""
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:130
@@ -195,8 +187,8 @@ msgstr ""
 msgid "Heartbeat timeout"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:82
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:148
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:85
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:151
 msgid "Host header rewrite"
 msgstr ""
 
@@ -208,19 +200,23 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:191
+msgid "Interval"
+msgstr ""
+
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:28
 msgid "Invalid client file"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:79
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:81
 msgid "Key path"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:195
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:198
 msgid "List of extra options"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:85
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:88
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:38
 msgid "Local IP"
 msgstr ""
@@ -229,19 +225,19 @@ msgstr ""
 msgid "Local Port"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:73
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:74
 msgid "Local addr"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:59
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:60
 msgid "Local path"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:89
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:92
 msgid "Local port"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:145
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:148
 msgid "Locations"
 msgstr ""
 
@@ -265,6 +261,10 @@ msgstr ""
 msgid "Manage Options"
 msgstr ""
 
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:185
+msgid "Max failed"
+msgstr ""
+
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:27
 msgid "Name"
 msgstr ""
@@ -283,22 +283,22 @@ msgstr ""
 msgid "Not set"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:56
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:57
 msgid "Password"
 msgstr ""
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:42
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:50
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:53
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:56
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:59
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:62
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:65
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:69
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:73
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:76
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:79
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:82
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:54
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:57
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:60
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:63
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:66
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:70
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:74
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:77
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:81
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:85
 msgid "Plugin"
 msgstr ""
 
@@ -318,7 +318,7 @@ msgstr ""
 msgid "Proxy Rules"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:152
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:155
 msgid "Proxy protocol version"
 msgstr ""
 
@@ -330,11 +330,11 @@ msgstr ""
 msgid "Remote Port"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:93
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:96
 msgid "Remote port"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:108
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:111
 msgid "Role"
 msgstr ""
 
@@ -350,7 +350,7 @@ msgstr ""
 msgid "Running"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:116
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:119
 msgid "SK"
 msgstr ""
 
@@ -370,7 +370,7 @@ msgstr ""
 msgid "Server addr"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:112
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:115
 msgid "Server name"
 msgstr ""
 
@@ -386,11 +386,11 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:62
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:63
 msgid "Strip prefix"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:137
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:140
 msgid "Subdomain"
 msgstr ""
 
@@ -419,23 +419,28 @@ msgid "True"
 msgstr ""
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:34
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:169
 #: luci-app-frpc/luasrc/model/cbi/frpc/rules.lua:32
 msgid "Type"
+msgstr ""
+
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:176
+msgid "URL"
 msgstr ""
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:50
 msgid "Unix path"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:103
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:106
 msgid "Use compression"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:98
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:101
 msgid "Use encryption"
 msgstr ""
 
-#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:53
+#: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:54
 msgid "User"
 msgstr ""
 
