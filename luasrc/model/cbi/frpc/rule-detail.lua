@@ -45,29 +45,45 @@ o:value("unix_domain_socket")
 o:value("http_proxy")
 o:value("socks5")
 o:value("static_file")
+o:value("https2http")
 
-o = s:option(Value, "plugin_unix_path", translate("Plugin unix path"))
+o = s:option(Value, "plugin_unix_path", "% - %" % { translate("Plugin"), translate("Unix path") })
+o.datatype = "file"
 o:depends("plugin", "unix_domain_socket")
 
-o = s:option(Value, "plugin_user", translate("Plugin user"))
+o = s:option(Value, "plugin_user", "% - %" % { translate("Plugin"), translate("User") })
 o:depends("plugin", "socks5")
 
-o = s:option(Value, "plugin_passwd", translate("Plugin password"))
+o = s:option(Value, "plugin_passwd", "% - %" % { translate("Plugin"), translate("Password") })
 o:depends("plugin", "socks5")
 
-o = s:option(Value, "plugin_local_path", translate("Plugin local path"))
+o = s:option(Value, "plugin_local_path", "% - %" % { translate("Plugin"), translate("Local path") })
 o:depends("plugin", "static_file")
 
-o = s:option(Value, "plugin_strip_prefix", translate("Plugin strip prefix"))
+o = s:option(Value, "plugin_strip_prefix", "% - %" % { translate("Plugin"), translate("Strip prefix") })
 o:depends("plugin", "static_file")
 
-o = s:option(Value, "plugin_http_user", translate("Plugin http user"))
+o = s:option(Value, "plugin_http_user", "% - %" % { translate("Plugin"), translate("HTTP user") })
 o:depends("plugin", "http_proxy")
 o:depends("plugin", "static_file")
 
-o = s:option(Value, "plugin_http_passwd", translate("Plugin http password"))
+o = s:option(Value, "plugin_http_passwd", "% - %" % { translate("Plugin"), translate("HTTP password") })
 o:depends("plugin", "http_proxy")
 o:depends("plugin", "static_file")
+
+o = s:option(Value, "plugin_local_addr", "% - %" % { translate("Plugin"), translate("Local addr") })
+o:depends("plugin", "https2http")
+
+o = s:option(Value, "plugin_crt_path", "% - %" % { translate("Plugin"), translate("Certificate path") })
+o.datatype = "file"
+o:depends("plugin", "https2http")
+
+o = s:option(Value, "plugin_key_path", "% - %" % { translate("Plugin"), translate("Key path") })
+o.datatype = "file"
+o:depends("plugin", "https2http")
+
+o = s:option(Value, "plugin_host_header_rewrite", "% - %" % { translate("Plugin"), translate("Host header rewrite") })
+o:depends("plugin", "https2http")
 
 o = s:option(Value, "local_ip", translate("Local IP"))
 o.datatype = "host"
@@ -135,6 +151,16 @@ o:depends("type", "http")
 o = s:option(Value, "host_header_rewrite", translate("Host header rewrite"))
 o:depends("type", "http")
 o:depends("type", "https")
+
+o = s:option(ListValue, "proxy_protocol_version", translate("Proxy protocol version"))
+o:value("")
+o:value("v1")
+o:value("v2")
+o:depends("type", "tcp")
+o:depends("type", "http")
+o:depends("type", "https")
+o:depends("type", "stcp")
+o:depends("type", "xtcp")
 
 o = s:option(Value, "group", translate("Group"))
 

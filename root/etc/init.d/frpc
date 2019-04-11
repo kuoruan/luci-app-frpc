@@ -98,6 +98,10 @@ rule_section_validate() {
 		'plugin_strip_prefix:string' \
 		'plugin_http_user:string' \
 		'plugin_http_passwd:string' \
+		'plugin_local_addr:string' \
+		'plugin_crt_path:file' \
+		'plugin_key_path:file' \
+		'plugin_host_header_rewrite:string' \
 		'local_ip:host' \
 		'local_port:port' \
 		'remote_port:or(port, portrange)' \
@@ -114,6 +118,7 @@ rule_section_validate() {
 		'custom_domains:string' \
 		'locations:string' \
 		'host_header_rewrite:string' \
+		'proxy_protocol_version:or("v1", "v2")' \
 		'group:string' \
 		'group_key:string' \
 		'health_check_type:or("tcp", "http")' \
@@ -160,11 +165,12 @@ add_frpc_rule() {
 
 	append_options "$file" \
 		"type" "plugin" "plugin_unix_path" "plugin_user" "plugin_passwd" "plugin_local_path" \
-		"plugin_strip_prefix" "plugin_http_user" "plugin_http_passwd" "local_ip" "local_port" \
+		"plugin_strip_prefix" "plugin_http_user" "plugin_http_passwd" "plugin_local_addr" \
+		"plugin_crt_path" "plugin_key_path" "plugin_host_header_rewrite" "local_ip" "local_port" \
 		"remote_port" "use_encryption" "use_compression" "role" "server_name" "bind_addr" \
 		"bind_port" "sk" "http_user" "http_pwd" "subdomain" "custom_domains" "locations" \
-		"host_header_rewrite" "group" "group_key" "health_check_type" "health_check_url" \
-		"health_check_timeout_s" "health_check_max_failed" "health_check_interval_s"
+		"host_header_rewrite" "proxy_protocol_version" "group" "group_key" "health_check_type" \
+		"health_check_url" "health_check_timeout_s" "health_check_max_failed" "health_check_interval_s"
 
 	config_list_foreach "$section" "extra_options" add_rule_extra_option "$file"
 }

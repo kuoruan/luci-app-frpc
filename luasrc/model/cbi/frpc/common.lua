@@ -67,9 +67,8 @@ for k, v in pairs(server_table) do
 	o:value(k, v)
 end
 
-o = s:taboption("general", ListValue, "run_user", translate("Run daemon as user"),
-	translate("Leave blank to use default user"))
-o:value("")
+o = s:taboption("general", ListValue, "run_user", translate("Run daemon as user"))
+o:value("", translate("-- default --"))
 local user
 for user in util.execi("cat /etc/passwd | cut -d':' -f1") do
 	o:value(user)
