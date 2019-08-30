@@ -90,11 +90,9 @@ o.datatype = "host"
 o:depends("plugin", "")
 
 o = s:option(Value, "local_port", translate("Local port"))
-o.datatype = "portrange"
 o:depends("plugin", "")
 
 o = s:option(Value, "remote_port", translate("Remote port"))
-o.datatype = "or(port, portrange)"
 o:depends("type", "tcp")
 o:depends("type", "udp")
 
