@@ -190,7 +190,7 @@ create_config_file() {
 		fi
 
 		append_options "$tmp_file" \
-			"log_file" "log_level" "log_max_days"
+			"log_file" "log_level" "log_max_days" "disable_log_color"
 
 		if [ -f "$log_file" ] ; then
 			echo > "$log_file"

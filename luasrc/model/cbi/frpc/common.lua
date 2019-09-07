@@ -94,6 +94,11 @@ o:depends("enable_logging", "1")
 o.datatype = "uinteger"
 o.placeholder = '3'
 
+o = s:taboption("general", Value, "disable_log_color", translate("Disable log color"))
+o:depends("enable_logging", "1")
+o.enabled = "true"
+o.disabled = "false"
+
 o = s:taboption("advanced", Value, "pool_count", translate("Pool count"),
 	translate("Connections will be established in advance, default value is zero"))
 o.datatype = "uinteger"
