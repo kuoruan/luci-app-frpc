@@ -61,6 +61,7 @@ frpc_scetion_validate() {
 		'log_file:file:/var/log/frpc.log' \
 		'log_level:or("trace", "debug", "info", "warn", "error"):warn' \
 		'log_max_days:uinteger:3' \
+		'disable_log_color:or("true", "false")' \
 		'pool_count:uinteger:0' \
 		'user:string' \
 		'login_fail_exit:or("true", "false"):true' \
