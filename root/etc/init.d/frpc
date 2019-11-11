@@ -58,7 +58,7 @@ frpc_scetion_validate() {
 		'client_file:file:/usr/bin/frpc' \
 		'run_user:string' \
 		'enable_logging:bool:0' \
-		'log_file:file:/var/log/frpc.log' \
+		'log_file:string:/var/log/frpc.log' \
 		'log_level:or("trace", "debug", "info", "warn", "error"):warn' \
 		'log_max_days:uinteger:3' \
 		'disable_log_color:or("true", "false")' \
