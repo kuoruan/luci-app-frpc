@@ -59,6 +59,7 @@ s:tab("manage", translate("Manage Options"))
 o = s:taboption("general", Flag, "enabled", translate("Enabled"))
 
 o = s:taboption("general", Value, "client_file", translate("Client file"), frpc_version())
+o.datatype = "file"
 o.rmempty = false
 
 o = s:taboption("general", ListValue, "server", translate("Server"))
