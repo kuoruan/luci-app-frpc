@@ -92,7 +92,7 @@ msgstr "调试"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/common.lua:97
 msgid "Disable log color"
-msgstr "禁用日志颜色""
+msgstr "禁用日志颜色"
 
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:22
 #: luci-app-frpc/luasrc/model/cbi/frpc/rule-detail.lua:168
