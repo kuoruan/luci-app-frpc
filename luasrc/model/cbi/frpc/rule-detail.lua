@@ -151,7 +151,7 @@ o:depends("type", "http")
 o:depends("type", "https")
 
 o = s:option(ListValue, "proxy_protocol_version", translate("Proxy protocol version"))
-o:value("")
+o:value("", translate("No protocol version defined"))
 o:value("v1")
 o:value("v2")
 o:depends("type", "tcp")
@@ -159,6 +159,7 @@ o:depends("type", "http")
 o:depends("type", "https")
 o:depends("type", "stcp")
 o:depends("type", "xtcp")
+o.default = ""
 
 o = s:option(Value, "group", translate("Group"))
 
