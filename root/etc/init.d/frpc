@@ -171,8 +171,7 @@ add_frpc_rule() {
 		"remote_port" "use_encryption" "use_compression" "role" "server_name" "bind_addr" \
 		"bind_port" "sk" "http_user" "http_pwd" "subdomain" "custom_domains" "locations" \
 		"host_header_rewrite" "proxy_protocol_version" "group" "group_key" "health_check_type" \
-		"health_check_url" "health_check_timeout_s" "health_check_max_failed" "health_check_interval_s" \
-		"http_proxy"
+		"health_check_url" "health_check_timeout_s" "health_check_max_failed" "health_check_interval_s"
 
 	config_list_foreach "$section" "extra_options" add_rule_extra_option "$file"
 }
@@ -215,7 +214,7 @@ create_config_file() {
 	append_options "$tmp_file" \
 		"pool_count" "tcp_mux" "user" "login_fail_exit" "protocol" "tls_enable" \
 		"admin_addr" "admin_port" "admin_user" "admin_pwd" "dns_server" \
-		"heartbeat_interval" "heartbeat_timeout"
+		"heartbeat_interval" "heartbeat_timeout" "http_proxy"
 
 	config_foreach add_frpc_rule "rule" "$tmp_file"
 
