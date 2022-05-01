@@ -33,13 +33,16 @@ append_options() {
 		v="$(eval echo "\$$o")"
 		if [ -n "$v" ] ; then
 			# add brackets when ipv6 address
-			if ( echo "$o" | grep -qE 'addr|ip' ) &&
-				( echo "$v" | grep -q ':' ) ; then
-				v="[$v]"
+			if ( echo "$o" | grep -qE 'addr|ip' ); then
+				 num=`eval echo "$v" | awk -F':' '{print NF-1}'  `
+				if [ "$num" -gt 1 ] ; then
+					v="[$v]"
+				fi
 			fi
 
 			echo "${o} = $v" >>"$file"
 		fi
+
 	done
 }
 
