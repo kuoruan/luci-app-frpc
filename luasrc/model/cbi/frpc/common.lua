@@ -120,6 +120,7 @@ o = s:taboption("advanced", ListValue, "protocol", translate("Protocol"),
 o:value("tcp", "TCP")
 o:value("kcp", "KCP")
 o:value("websocket", "Websocket")
+o:value("quic", "quic")
 o.default = "tcp"
 
 o = s:taboption("advanced", Value, "http_proxy", translate("HTTP proxy"),
