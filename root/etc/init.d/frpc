@@ -65,7 +65,7 @@ frpc_scetion_validate() {
 		'pool_count:uinteger:0' \
 		'user:string' \
 		'login_fail_exit:or("true", "false"):true' \
-		'protocol:or("tcp", "kcp", "websocket"):tcp' \
+		'protocol:or("tcp", "kcp", "websocket", "quic"):tcp' \
 		'http_proxy:string' \
 		'tls_enable:or("true", "false")' \
 		'dns_server:host' \
